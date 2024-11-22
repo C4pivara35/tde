@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Legislações e Normas sobre Acessibilidade</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Guia de Acessibilidade</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pagina1.html">Acessibilidade</a>
+            <a href="pagina2.html">Tecnologias Assistivas</a>
+            <a href="pagina3.html">Exemplos</a>
+            <a href="pagina4.html" class="active">Legislações e Normas</a>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="main-content">
+            <h2>Legislações e <span>Normas</span></h2>
+            <br>
+            <h3>Decreto nº 5.296/2004</h3>
+            <p>Regulamenta a acessibilidade em espaços físicos e digitais, com destaque para a inclusão de pessoas com deficiência no ambiente online.</p>
+
+            <h3>Lei Brasileira de Inclusão (Lei nº 13.146/2015)</h3>
+            <p>Garante os direitos das pessoas com deficiência, incluindo o acesso à internet. Essa lei reforça a necessidade de que recursos digitais sejam planejados e implementados de forma acessível.</p>
+
+            <h3>Modelo eMAG (Modelo de Acessibilidade em Governo Eletrônico)</h3>
+            <p>Diretrizes que orientam o desenvolvimento de sites acessíveis no âmbito do governo brasileiro, baseadas nas recomendações internacionais da WCAG 2.0. </p>
+
+            <h3>Por que essas leis são importantes?</h3>
+            <ul class="lista">
+                <li>Elas promovem a inclusão digital para milhões de brasileiros com deficiência.</li>
+                <li>Auxiliam na criação de uma web mais democrática e acessível para todos.</li>
+                <li>Garantem que instituições públicas e privadas sigam padrões de acessibilidade.</li>
+            </ul>
+
+            <h3>Saiba Mais:</h3>
+            <ul class="lista">
+                <li><a href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm" target="_blank">Decreto nº 5.296/2004</a></li>
+                <li><a href="http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Lei/L13146.htm" target="_blank">Lei Brasileira de Inclusão</a></li>
+                <li><a href="http://emag.governoeletronico.gov.br/" target="_blank">Conheça o eMAG</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="painel-acessibilidade" class="painel recolhido">
+        <button class="toggle-painel" onclick="togglePainel()">Acessibilidade</button>
+        <div class="opcoes-acessibilidade">
+            <button onclick="ativarFiltroDaltonismo()">Filtro para Daltonismo</button>
+            <button onclick="ativarContraste()">Modo de Alto Contraste</button>
+            <button onclick="lerTexto()">Ler Texto</button>
+            <button onclick="ajustarFonte(1)">Aumentar Texto</button>
+            <button onclick="ajustarFonte(-1)">Diminuir Texto</button>
+        </div>
+    </div>
+
+    <script src="acessibilidade.js"></script>
+</body>
+</html>

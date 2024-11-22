@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplos Práticos de Acessibilidade</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Guia de Acessibilidade</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pagina1.html">Acessibilidade</a>
+            <a href="pagina2.html">Tecnologias Assistivas</a>
+            <a href="pagina3.html" class="active">Exemplos</a>
+            <a href="pagina4.html">Legislações e Normas</a>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="main-content">
+            <h2>Exemplos Práticos: <span>Como Fazer Certo</span></h2>
+            <br>
+
+            <h3>Títulos Estruturados</h3>
+            <p> Use uma hierarquia lógica para os títulos, garantindo clareza e navegabilidade:</p>
+            <ul class="lista">
+                <li><strong>Certo:</strong> Use <code>&lt;h1&gt;</code> para o título principal e <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> para subtítulos.</li>
+                <li><strong>Errado:</strong> Pular níveis ou usar títulos de forma desordenada.</li>
+            </ul>
+            <br>
+
+            <h3>Contraste de Cores</h3>
+            <p>Certifique-se de que o texto seja legível, mesmo para pessoas com baixa visão:</p>
+            <ul class="lista">
+                <li><strong>Certo:</strong> Texto preto em fundo branco ou amarelo em preto.</li>
+                <li><strong>Errado:</strong> Texto cinza claro em fundo branco.</li>
+            </ul>
+            <br>
+
+            <h3>Imagens</h3>
+            <p>Todas as imagens relevantes devem incluir descrições alternativas:</p>
+            <ul class="lista">
+                <li><strong>Certo:</strong> <code>&lt;img src="foto.jpg" alt="Descrição da foto"&gt;</code></li>
+                <li><strong>Errado:</strong> <code>&lt;img src="foto.jpg"&gt;</code> (sem o atributo <code>alt</code>).</li>
+            </ul>
+            <br>
+
+            <h3>Formulários</h3>
+            <p>Formulários precisam ser claros e acessíveis:</p>
+            <ul class="lista">
+                <li><strong>Certo:</strong> Inclua <code>&lt;label&gt;</code> para cada campo do formulário e use descrições claras.</li>
+                <li><strong>Errado:</strong> Indicar campos obrigatórios apenas com cores.</li>
+            </ul>
+            <br>
+
+            <h3>Design Interativo</h3>
+            <p>Crie exemplos no site para ensinar boas práticas. Por exemplo:</p>
+            <ul class="lista">
+                <li>Simule diferentes níveis de contraste para que os usuários entendam a diferença.</li>
+                <li>Mostre a navegação com leitores de tela para reforçar a importância de descrições e hierarquias corretas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="painel-acessibilidade" class="painel recolhido">
+        <button class="toggle-painel" onclick="togglePainel()">Acessibilidade</button>
+        <div class="opcoes-acessibilidade">
+            <button onclick="ativarFiltroDaltonismo()">Filtro para Daltonismo</button>
+            <button onclick="ativarContraste()">Modo de Alto Contraste</button>
+            <button onclick="lerTexto()">Ler Texto</button>
+            <button onclick="ajustarFonte(1)">Aumentar Texto</button>
+            <button onclick="ajustarFonte(-1)">Diminuir Texto</button>
+        </div>
+    </div>
+
+    <script src="acessibilidade.js"></script>
+</body>
+</html>

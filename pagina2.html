@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tecnologias assistivas e seus benefícios</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Guia de Acessibilidade</a>
+
+        <nav>
+            <a href="index.html" > Home</a>
+            <a href="pagina1.html" >Acessibilidade</a>
+            <a href="pagina2.html" class="active" >Tecnologias Assistivas</a>
+            <a href="pagina3.html" >Exemplos</a>
+            <a href="pagina4.html" >Legislações e Normas</a>
+        </nav>
+    </header>
+    <section class="main">
+    </div>
+    <div class="main-content">
+        <h2>Tecnologias que <span>Transformam Vidas </span></h2>
+        <br>
+        <h3>O que são Tecnologias Assistivas?</h3>
+        <p>São ferramentas que ajudam pessoas com deficiência a acessar recursos digitais e físicos.</p>
+        <br>
+        <h3>Exemplos:</h3>
+        <ul class="lista">
+            <li>Leitores de tela (JAWS, NVDA).</li>
+            <li>Linha Braille.</li>
+            <li>Teclados adaptados.</li>
+            <li>Ampliadores de tela.</li>
+        </ul>
+        <h3>Dica Prática:</h3>
+        <ul class="lista">
+            <li>Testar seu site com leitores de tela pode ajudar a identificar problemas e corrigir falhas.</li>
+        </ul>
+    </div>
+</section>
+
+<div id="painel-acessibilidade" class="painel recolhido">
+    <button class="toggle-painel" onclick="togglePainel()">Acessibilidade</button>
+    <div class="opcoes-acessibilidade">
+        <button onclick="ativarFiltroDaltonismo()">Filtro para Daltonismo</button>
+        <button onclick="ativarContraste()">Modo de Alto Contraste</button>
+        <button onclick="lerTexto()">Ler Texto</button>
+        <button onclick="ajustarFonte(1)">Aumentar Texto</button>
+        <button onclick="ajustarFonte(-1)">Diminuir Texto</button>
+    </div>
+</div>
+
+<script src="acessibilidade.js"></script>
+</body>
+</html>

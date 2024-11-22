@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Guia de Acessibilidade</a>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="pagina1.html">Acessibilidade</a>
+            <a href="pagina2.html">Tecnologias Assistivas</a>
+            <a href="pagina3.html">Exemplos</a>
+            <a href="pagina4.html">Legislações e Normas</a>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="main-img">
+            <img src="main.gif" alt="Descrição da imagem principal">
+        </div>
+        <div class="main-content">
+            <h1>Bem-vindo ao <span>Guia de Acessibilidade</span></h1>
+            <p>Acessibilidade é mais do que um conceito técnico: é um direito. Este site foi criado para mostrar como práticas inclusivas podem transformar a vida cotidiana de milhões de pessoas.</p>
+            <a href="pagina1.html" class="btn">Saiba mais</a>
+        </div>
+    </section>
+
+    <div id="painel-acessibilidade" class="painel recolhido">
+        <button class="toggle-painel" onclick="togglePainel()">Acessibilidade</button>
+        <div class="opcoes-acessibilidade">
+            <button onclick="ativarFiltroDaltonismo()">Filtro para Daltonismo</button>
+            <button onclick="ativarContraste()">Modo de Alto Contraste</button>
+            <button onclick="lerTexto()">Ler Texto</button>
+            <button onclick="ajustarFonte(1)">Aumentar Texto</button>
+            <button onclick="ajustarFonte(-1)">Diminuir Texto</button>
+        </div>
+    </div>
+
+    <script src="acessibilidade.js"></script>
+</body>
+</html>

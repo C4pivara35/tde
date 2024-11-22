@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acessibilidade na web e sua importância</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Guia de Acessibilidade</a>
+
+        <nav>
+            <a href="index.html" > Home</a>
+            <a href="pagina1.html" class="active">Acessibilidade</a>
+            <a href="pagina2.html" >Tecnologias Assistivas</a>
+            <a href="pagina3.html" >Exemplos</a>
+            <a href="pagina4.html" >Legislações e Normas</a>
+        </nav>
+    </header>
+    <section class="main">
+        </div>
+        <div class="main-content">
+            <h2>Acessibilidade na <span>Web</span></h2>
+            <br>
+            <h3>Por que a acessibilidade é importante?</h3>
+            <p>Cerca de 23,9% dos brasileiros possuem algum tipo de deficiência. Para essas pessoas, a web pode ser uma ferramenta de autonomia – desde que seja inclusiva.</p>
+            <h3>Barreiras comuns:</h3>
+            <ul class="lista">
+                <li>Imagens sem descrição.</li>
+                <li>Falta de legendas em vídeos.</li>
+                <li>Links genéricos como "Clique aqui".</li>
+            </ul>
+            <h3>Dicas:</h3>
+            <ul class="lista">
+                <li>Sempre use descrições para imagens (atributo alt).</li>
+                <li>Evite usar apenas cor para transmitir informações.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Painel de Acessibilidade -->
+    <div id="painel-acessibilidade" class="painel recolhido">
+        <button class="toggle-painel" onclick="togglePainel()">Acessibilidade</button>
+        <div class="opcoes-acessibilidade">
+            <button onclick="ativarFiltroDaltonismo()">Filtro para Daltonismo</button>
+            <button onclick="ativarContraste()">Modo de Alto Contraste</button>
+            <button onclick="lerTexto()">Ler Texto</button>
+            <button onclick="ajustarFonte(1)">Aumentar Texto</button>
+            <button onclick="ajustarFonte(-1)">Diminuir Texto</button>
+        </div>
+    </div>
+
+    <script src="acessibilidade.js"></script>
+</body>
+</html>
